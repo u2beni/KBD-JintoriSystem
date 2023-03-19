@@ -10,6 +10,9 @@
     </title>
 
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -17,7 +20,17 @@
         陣取り用システム
     </h1>
 
-    <!-- -->
+    <!--元データの入力-->
+    <p>
+        step0:元データ
+    </p>
+
+    <div class="step0">
+        <textarea id="s0-data" cols="100" rows="1"></textarea>
+        <input type="button" value="import" id="s0-import">
+    </div>
+
+    <!--通常マスの更新-->
 
     <p>
         step1:普通のマス
@@ -25,36 +38,69 @@
 
     <div class="step1-input">
         <label>
-            ID:<input type="text" size="4" id="name-id">
+            ID:<input type="text" size="4" id="s1-name">
         </label>
 
         <label>
-            横:<input type="text" size="2" id="position-x">
+            横:<input type="text" size="2" id="s1-x">
         </label>
 
         <label>
-            縦:<input type="text" size="2" id="position-y">
+            縦:<input type="text" size="2" id="s1-y">
         </label>
 
         <label>
-            難易度:<input type="text" size="2" id="diff-id">
+            難易度:<input type="text" size="2" id="s1-diff">
         </label>
 
         <label>
-            点数:<input type="text" size="10" id="score">
+            点数:<input type="text" size="10" id="s1-score">
         </label>
 
-        <input type="button" value="check">
+        <input type="button" value="check" id="s1-check">
     </div>
 
     <div class="step1-check">
-        <input type="text" size="100" id="imported-data">
-        <input type="button" value="Add to list">
+        <input type="text" size="100" id="s1-dataset">
+        <input type="button" value="Add to list" id="s1-add">
     </div>
 
     <div class="step1-list">
-        <textarea id="list" cols="100" rows="20" disabled></textarea>
+        <textarea cols="100" rows="20" id="s1-list" disabled></textarea>
     </div>
+
+    <!--通常マスの更新-->
+
+    <p>
+        step2:盤面塗り替え
+    </p>
+    <table>
+        <tr>
+            <th>名前</th>
+            <th>年齢</th>
+        </tr>
+        <tr>
+            <td>田中</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>佐藤</td>
+            <td>42</td>
+        </tr>
+    </table>
+
+    <p>
+        step3:横取り、ロック処理
+    </p>
+
+    <p>
+        step4:拠点更新（未完成）
+    </p>
+
+    <p>
+        step5:盤面データ
+    </p>
+
 </body>
 
 </html>
