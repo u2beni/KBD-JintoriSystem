@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="ja">
 
 <head>
+    <meta charset="UTF-8">
+
     <title>
-        jintori-system
+        8x8 Jintori
     </title>
 </head>
 
 <body>
     <h1>
-        Jintori-System
+        陣取り用システム
     </h1>
 
     <!-- -->
 
     <p>
-        <input type="text" id="textbox1">
-
+        step1:普通のマス
     </p>
+
+    <div class="step1-input">
+        <label>
+            ID:<input type="text" size="4" id="name-id">
+        </label>
+
+        <label>
+            横:<input type="text" size="2" id="position-x">
+        </label>
+
+        <label>
+            縦:<input type="text" size="2" id="position-y">
+        </label>
+
+        <label>
+            難易度:<input type="text" size="2" id="diff-id">
+        </label>
+
+        <label>
+            点数:<input type="text" size="10" id="score">
+        </label>
+
+        <input type="button" value="check">
+    </div>
+
+    <div class="step1-check">
+        <input type="text" size="200" id="imported-data">
+        <input type="button" value="Add to list">
+    </div>
+
+    <div class="step1-list">
+        <textarea id="list" cols="200" rows="20" disabled></textarea>
+    </div>
 </body>
 
 </html>
