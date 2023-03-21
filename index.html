@@ -30,321 +30,65 @@
         <input type="button" value="取得" id="s0-import">
     </div>
 
-    <!--通常マスの更新-->
+    <!--提出スコア反映用-->
 
     <p>
-        step1:普通のマス
+        提出スコア
     </p>
 
     <div class="step1-input">
         <label>
-            ID:<input type="text" size="4" id="s1-name">
+            ID:<input type="text" size="4" id="score-name">
         </label>
 
         <label>
-            横:<input type="text" size="2" id="s1-x">
+            横:<input type="text" size="2" id="score-x">
         </label>
 
         <label>
-            縦:<input type="text" size="2" id="s1-y">
+            縦:<input type="text" size="2" id="score-y">
         </label>
 
         <label>
-            難易度:<input type="text" size="2" id="s1-diff">
+            難易度:<input type="text" size="2" id="score-diff">
         </label>
 
         <label>
-            点数:<input type="text" size="10" id="s1-score">
+            点数:<input type="text" size="10" id="score-point">
         </label>
 
-        <input type="button" value="確認" id="s1-check">
+        <input type="button" value="確認" id="score-check">
     </div>
 
     <div class="step1-check">
-        <input type="text" size="100" id="s1-dataset">
-        <input type="button" value="追加" id="s1-add">
+        <input type="text" size="100" id="score-dataset">
+        <input type="button" value="追加" id="score-add">
     </div>
 
     <div class="step1-list">
-        <textarea cols="100" rows="20" id="s1-list" disabled></textarea>
+        <textarea cols="100" rows="20" id="score-list" disabled></textarea>
     </div>
 
     <!--通常マスの更新-->
 
     <p>
-        step2:盤面塗り替え
+        盤面塗り替え
     </p>
 
-    <div class="step2-button">
-        <input type="button" value="塗り替え" id="s3-button">
+    <div class="nurikae-button">
+        <input type="button" value="塗り替え" id="nurikae-button">
     </div>
-
-    <div class="step2-log">
-        <textarea cols="100" rows="20" id="s2-log" disabled></textarea>
-    </div>
-
-    <table>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-    </table>
-
-    <p>
-        step3:横取り、ロック処理
-    </p>
 
     <div class="step3-button">
-        <input type="button" value="横取り、ロック処理" id="s3-button">
+        <input type="button" value="横取り、ロック" id="s3-button">
     </div>
 
-    <table>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-    </table>
-
-    <p>
-        step4:拠点更新（未完成）
-    </p>
-
-    <div class="step4-button">
-        <input type="button" value="拠点更新" id="s4-button">
-        <input type="button" value="横取り、ロック処理" id="s4-button">
+    <div class="process-log">
+        <textarea cols="100" rows="20" id="process-log" disabled></textarea>
     </div>
 
-    <table>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-
-    </table>
-
     <p>
-        step5:盤面テキストデータ
+        盤面テキストデータ
     </p>
 
 </body>
